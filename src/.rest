@@ -1,0 +1,32 @@
+### POST /lotes
+POST http://localhost:3000/lotes
+Content-Type: application/json
+
+{
+    "nombre": "Lote 5",
+    "coordenadas": [[4, 2], [2, 14], [4, 21], [18, 25], [4, 2]]
+}
+
+### Obtener todos los lotes
+GET http://localhost:3000/lotes
+
+### Obtener un lote por ID
+GET http://localhost:3000/lotes/1
+
+### Actualizar un lote por ID
+PUT http://localhost:3000/lotes/1
+Content-Type: application/json
+
+{
+  "nombre": "Lote Actualizado",
+  "coordenadas": [
+    [0, 0],
+    [0, 2],
+    [2, 2],
+    [2, 0],
+    [0, 0]
+  ]
+}
+
+### Eliminar un lote por ID
+DELETE http://localhost:3000/lotes/5
